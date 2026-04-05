@@ -12,5 +12,5 @@ This task involved analyzing a REST API for common security flaws listed in the 
 While testing the `/users/` endpoint, I discovered that changing the `user_id` parameter allowed me to view unauthorized profiles. 
 
 ## 📁 Deliverables
-* [📄 API Security Report](./Documentation/API_Security_Report.pdf)
+* [📄 API Security Report](./Documentation/API Security Risk Analysis Report.pdf)
 * [📸 Technical Evidence](./Evidence/)
