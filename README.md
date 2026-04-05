@@ -1,39 +1,16 @@
-# 🔐 Secure File Portal with AES Encryption
+# 🛡️ Task 3: API Security & Risk Mitigation
+**Student:** Muhammad Shadab Shaik | **CIN:** FIT/MAR26/CS7147
 
-A secure web-based file upload and download portal built using **Python Flask**.  
-All uploaded files are encrypted using **AES encryption (Fernet)** before being stored on the server and decrypted only at download time.
+## 📖 Project Overview
+This task involved analyzing a REST API for common security flaws listed in the **OWASP API Top 10**. I focused on identifying **Broken Object Level Authorization (BOLA)**.
 
-This project demonstrates **secure file handling**, **basic cryptography**, and **key management best practices**, making it suitable for **cybersecurity internships, academic projects, and portfolios**.
+## 🛠️ Tools Used
+* **Postman:** For sending API requests and analyzing JSON responses.
+* **Burp Suite (Optional):** For intercepting API traffic.
 
----
+## 🕵️ Finding: Broken Object Level Authorization (BOLA)
+While testing the `/users/` endpoint, I discovered that changing the `user_id` parameter allowed me to view unauthorized profiles. 
 
-## 📌 Features
-
-- ✅ Secure file upload and download
-- 🔒 AES encryption for all files at rest
-- 🗝️ Encryption key stored securely using environment variables
-- 🖥️ Simple and user-friendly web interface
-- 🛡️ Temporary decrypted files (auto-cleanup)
-- 📄 Well-structured and commented code
-
----
-
-## 🛠️ Technologies Used
-
-### Backend
-- Python 3.x
-- Flask  
-  https://flask.palletsprojects.com/en/latest/
-
-### Cryptography
-- Cryptography (Fernet – AES encryption)  
-  https://cryptography.io/
-
-### Frontend
-- HTML
-- CSS
-- JavaScript
-
-### Tools
-- Git & GitHub  
-- Postman / curl (for API testing)
+## 📁 Deliverables
+* [📄 API Security Report](./Documentation/API_Security_Report.pdf)
+* [📸 Technical Evidence](./Evidence/)
